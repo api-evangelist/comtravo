@@ -1,7 +1,25 @@
 aid: comtravo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/comtravo.png
 name: Comtravo
-description: 'Comtravo is a company surfaced as a portfolio company of creandum and added to the API Evangelist
-  network as a stub for enrichment. Sector: other. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Comtravo was a Berlin-based business travel management company (a TMC) that
+  combined booking technology with human travel agents to handle corporate flights, hotels,
+  rail and expense workflows for European businesses. It was backed by Creandum and other
+  investors. As of this enrichment pass the standalone company is no longer operating: the
+  comtravo.com domain returns a 301 redirect to navan.com, consistent with Comtravo having
+  been acquired/wound into Navan (formerly TripActions). No independent Comtravo developer
+  portal, API documentation, OpenAPI, or public API surface could be found, so this profile
+  is retained as a historical/defunct record rather than an active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/comtravo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,15 +27,28 @@ x-backed-by:
 - creandum
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: 'https://www.comtravo.com 301-redirects to https://navan.com/ (probed 2026-07-18)'
+x-acquired-by: navan
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Other
+- Business Travel
+- Travel
+- Corporate Travel
+- Travel Management
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
